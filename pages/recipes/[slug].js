@@ -36,7 +36,7 @@ export const getStaticProps = async({params}) => {
   if(!items.length){
     return{
       redirect:{
-        distination: '/',
+        destination: '/',
         permanent:false
       }
     }
