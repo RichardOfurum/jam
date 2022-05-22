@@ -18,14 +18,7 @@ export const getStaticPaths = async() => {
         }
     });
 
-    if(!items.length){
-        return{
-          redirect:{
-            distination: '/',
-            permanent:false
-          }
-        }
-    }
+    
 
     return {
         paths,
@@ -39,6 +32,15 @@ export const getStaticProps = async({params}) => {
       content_type: 'recipe',
       'fields.slug': params.slug
   });
+
+  if(!items.length){
+    return{
+      redirect:{
+        distination: '/',
+        permanent:false
+      }
+    }
+}
 
   return {
     props:{
