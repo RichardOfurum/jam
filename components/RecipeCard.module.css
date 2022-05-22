@@ -1,0 +1,50 @@
+.cardImage {
+    object-fit: cover;
+    min-width: 100% !important;
+    /* min-height: 200px !important; */
+}
+
+.card {
+    transform: rotateZ(-1deg);
+    max-width: 400px !important;
+    flex-grow: 4;
+    margin: 20px;
+    /* flex-shrink: 3; */
+}
+
+.content {
+    background: #fff;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    position: relative;
+    top: -40px;
+    left: -10px;
+}
+
+.info {
+    padding: 16px;
+}
+
+.info h4 {
+    margin: 4px 0;
+    text-transform: uppercase;
+}
+
+.info p {
+    margin: 0;
+    color: #777;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions a {
+    color: #fff;
+    background: #f01b29;
+    /* background: #cec1368c; */
+    padding: 16px 24px;
+    text-decoration: none;
+}
