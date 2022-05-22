@@ -18,6 +18,15 @@ export const getStaticPaths = async() => {
         }
     });
 
+    if(!items.length){
+        return{
+          redirect:{
+            distination: '/',
+            permanent:false
+          }
+        }
+    }
+
     return {
         paths,
         fallback: true
